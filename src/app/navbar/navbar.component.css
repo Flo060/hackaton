@@ -1,0 +1,98 @@
+.menuPrincipale{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	background-color: #1580eb;
+	box-shadow:0 5px 5px gray;
+}
+.blockImage{
+    height: 50px;
+    background-color: #1580eb;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+	transform: scale(1);
+	transition:1000ms;
+}
+.img:hover{
+	transform: scale(1.1);
+	transition:1000ms;
+}
+.blockMenu{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.menu a{
+	color:white;
+	font-weight: bold;
+	display: flex;
+	text-decoration: none;
+	padding: 20px;
+	background-color: #1580eb;
+	width: 200px;
+	font-size:17px;
+}
+.menu >a{
+	transition:1000ms;
+}
+.menu >a:hover{
+	background-color:  #0d71d6;
+	border-radius: 20px 20px 0 0;
+	transition:1000ms;
+}
+.menu >ul::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+ul.sous-menu{
+	display:none;
+}
+.menu:hover ul.sous-menu{
+	display:inline-block;
+	position:absolute;
+	padding: 0;
+	margin: 0;
+	z-index:1000;
+}
+.sous-menu a{
+	transition:1000ms;
+}
+.sous-menu a:hover{
+	background-color:  #0d71d6;
+	transition:1000ms;
+}
+.bntdeco{
+	text-align: center;
+	justify-content: center;
+}
+@media screen and (max-width: 800px){
+	.blockImage{
+		text-align: center;
+    	width: 100%;
+		display: unset;
+	}
+	.menuPrincipale{
+		flex-wrap: wrap;
+	}
+	.menu{
+		width: 100%;
+	}
+	.menu >a{
+		justify-content: center;
+    	width: 92%;
+	}
+	.sous-menu a{
+		background-color:  #0d71d6;
+		width: 100%;
+	}
+	.sous-menu{
+		width: 100%;
+	}
+}
