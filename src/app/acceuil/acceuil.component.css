@@ -1,9 +1,10 @@
 .case{
     color: black;
-    width: 35px;
-    height: 35px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    overflow: auto;
 }

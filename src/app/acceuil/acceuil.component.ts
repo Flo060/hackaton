@@ -77,5 +77,7 @@ export class AcceuilComponent implements OnInit {
        }
      }
   }
-  
+  getdata(){
+    
+  }
 }
