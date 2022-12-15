@@ -73,7 +73,7 @@ export class AcceuilComponent implements OnInit {
       let i = Math.floor(Math.random() * this.listeFinale.length);
        this.listeFinale2.push(this.listeFinale[i])
        if (this.listeFinale.length > 0) {
-          this.listeFinale[i].slice()
+          this.listeFinale[i].slice(i)
        }
      }
   }
