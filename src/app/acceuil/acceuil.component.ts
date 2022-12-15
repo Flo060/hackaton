@@ -54,7 +54,7 @@ export class AcceuilComponent implements OnInit {
     for (let index = 0; index < 12; index++) {
      let i = Math.floor(Math.random() * this.gage.length);
       this.listeFinale.push(this.gage[i])
-      this.gage[i].slice()
+      this.gage[i].slice(i)
     }
     this.randomgift()
   }
@@ -63,7 +63,7 @@ export class AcceuilComponent implements OnInit {
     for (let index = 0; index < 12; index++) {
      let i = Math.floor(Math.random() * this.cadeaux.length);
       this.listeFinale.push(this.cadeaux[i])
-      this.cadeaux[i].slice()
+      this.cadeaux[i].slice(i)
     }
     this.randomFinale();
   }
@@ -78,6 +78,6 @@ export class AcceuilComponent implements OnInit {
      }
   }
   getdata(){
-    
+
   }
 }
